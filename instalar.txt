@@ -1,0 +1,27 @@
+
+
+1.- Instalar entorno virtual
+python -m virtualenv venv
+
+
+2.- Activar entorno virtual
+.\venv\Scripts\activate
+
+
+3.- ver paquetes 
+pip list
+
+
+
+
+-----------------------------------
+
+Como crear el requirements.txt para los paquetes
+
+pip freeze > "requirements.txt"
+
+
+Primero tener activo el venv y despues ya podemos Instalar requirements.txt
+
+pip install -r "requirements.txt"
+
