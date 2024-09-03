@@ -25,3 +25,12 @@ Primero tener activo el venv y despues ya podemos Instalar requirements.txt
 
 pip install -r "requirements.txt"
 
+
+
+-----------------------------------
+
+El super usuarios es:
+admin
+password
+
+

@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'bases', 
+    'bases',  # Agregando la app bases
 ]
 
 MIDDLEWARE = [
@@ -57,7 +57,7 @@ import os
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'templates'),], # Esto es para probar el servidor local
+        'DIRS': [os.path.join(BASE_DIR, 'templates'),], # Esto es para agregar el directorio base de "templates" general 
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -122,9 +122,13 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-STATIC_URL = 'static/'
+STATIC_URL = '/static/'
 
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),) #Esto es para probar el servidor local el path es la carpeta static
+#Opcional
+#STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+# Esto es para agregar el directorio base de "static" general
+STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),) 
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
