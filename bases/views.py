@@ -8,9 +8,9 @@ from django.views import generic
 
 # Create your views here.
 
-class Home(LoginRequiredMixin,generic.TemplateView): # Dentro de la raiz del proyecto buscara la carpeta templates y luego la carpeta bases 
+class Home(LoginRequiredMixin, generic.TemplateView): # Dentro de la raiz del proyecto buscara la carpeta templates y luego la carpeta bases 
     template_name = 'bases/home.html'
-    login_url = '/admin' # Si no esta logeados redirecciona al admin
+    login_url = 'bases:login' # Si no esta logeados redirecciona al admin
 
 
 
