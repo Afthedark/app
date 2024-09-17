@@ -1,6 +1,6 @@
 <!-- Plantilla hija heredara login de base -->
 
-{% extends 'base/base.html' %}
+{% extends 'base/base.html' %} <!-- Esto es para extender la clase base -->
 
 {% block side_bar %}{% endblock %}
 {% block top_bar %}{% endblock %}
@@ -23,7 +23,7 @@
                         <div class="col-lg-6">
                             <div class="p-5">
                                 <div class="text-center">
-                                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                                    <h1 class="h4 text-gray-900 mb-4">Bienvenido de nuevo!</h1>
                                     <small class="text-danger">
                                         {% if form.errors or form.non_field_errors %}
                                         {% for field in form %}
